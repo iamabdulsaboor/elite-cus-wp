@@ -19,6 +19,21 @@ document.querySelectorAll('a').forEach(link => {
     });
 });
 
+// navbar
+const menuBtn = document.querySelector('.mobile-menu-btn');
+  const nav = document.querySelector('.main-nav');
+
+  menuBtn.addEventListener('click', () => {
+    // Toggle the 'active' class which triggers the CSS transition
+    nav.classList.toggle('active');
+  });
+
+  // Optional: Close menu when a link is clicked
+  document.querySelectorAll('.main-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('active');
+    });
+  });
 
 // branding
 
@@ -55,6 +70,7 @@ document.querySelectorAll('a').forEach(link => {
 
     btn.innerHTML = isOpen ? "View More ↓" : "View Less ↑";
   });
+  
 
 
 

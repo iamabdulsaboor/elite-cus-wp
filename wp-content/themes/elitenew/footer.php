@@ -31,7 +31,7 @@ exceptional results for our clients. </p>
                         <li><a href="#">Graphics Designing</a></li>
                         <li><a href="#">Web Development</a></li>
                         <li><a href="#">Social Media Marketing</a></li>
-                        <li><a href="#">Sales Marketing</a></li>
+                        <li><a href="#">Lead Generation</a></li>
                         <li><a href="#">Video Editing</a></li>
                         <li><a href="#">SEO</a></li>
                     </ul>

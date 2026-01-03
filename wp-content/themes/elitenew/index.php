@@ -171,7 +171,7 @@
         <div class="icon">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/art.png" alt="Graphic Designing Icon">
         </div>
-        <h3>Hosting</h3>
+        <h3>Lead Generation</h3>
         <p>
           Reliable domain registration and secure hosting with strong uptime,
           fast speeds, and stable performance.
@@ -200,6 +200,129 @@
 
   </div>
 </section>
+
+
+<!-- our projects -->
+<section class="portfolio-section">
+  <div class="container">
+
+    <div class="portfolio-layout">
+
+      <!-- LEFT COLUMN (3 CARDS) -->
+      <div class="left-column">
+
+        <div class="hover-card">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/projects/Untitled-2.jpg" alt="">
+          <div class="overlay">
+            <span>● Graphics Design</span>
+            <button>View All</button>
+          </div>
+        </div>
+
+        <div class="hover-card">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/projects/Untitled.jpg" alt="">
+          <div class="overlay">
+            <span>● UI/UX Design</span>
+            <button>View All</button>
+          </div>
+        </div>
+
+        <div class="hover-card">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/projects/Untitled-3.jpg" alt="">
+          <div class="overlay">
+            <span>● S.E.O.</span>
+            <button>View All</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN (1 BIG CARD) -->
+      <div class="right-column">
+        <div class="hover-card big">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/projects/Untitled-4.jpg" alt="">
+          <div class="overlay">
+            <span>● Website Development</span>
+            <button>View All</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- faq's section -->
+<section class="collab-section">
+  <div class="container">
+    <div class="collab-grid">
+
+      <!-- LEFT CONTENT -->
+      <div class="collab-left">
+
+        <h2>Let’s Build Something Exceptional Together </h2>
+
+        <div class="team">
+          <div class="member">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/Gemini_Generated_Image_wukdhgwukdhgwukd.avif" alt="">
+            <h4>Haseeb Ahmed <span>in</span></h4>
+            <p>CEO & Founder</p>
+          </div>
+
+          <div class="member">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/download (1).avif" alt="">
+            <h4>Mahad Ajmal <span>in</span></h4>
+            <p>Head of Business Development</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT FAQ -->
+      <div class="collab-right">
+
+        <h3>Frequently Asked Questions</h3>
+
+        <details>
+          <summary>What services do you offer?</summary>
+          <p>
+            We provide digital marketing, branding, web development,
+            UI/UX design, and creative media solutions.
+          </p>
+        </details>
+
+        <details>
+          <summary>How long does a project take?</summary>
+          <p>
+            Project timelines depend on scope, but most projects
+            take between 2–6 weeks.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do you work with international clients?</summary>
+          <p>
+            Yes, we work with both local and international clients
+            across multiple industries.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can you sign an NDA?</summary>
+          <p>
+            Absolutely. Client confidentiality is our priority
+            and we’re happy to sign NDAs.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
 

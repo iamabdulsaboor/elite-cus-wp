@@ -161,3 +161,69 @@ box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
   color: var(--primary-color);
   cursor: pointer;
 }
+
+
+/* Footer Styles */
+/* ... Your existing CSS ... */
+
+/* Mobile Menu Button - Hidden by default */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--secondary-color); /* Matches your nav links */
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block; /* Show button on mobile */
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%; /* Sits right under the header */
+    left: 0;
+    width: 100%;
+    background: linear-gradient(160deg, #941c97 0%, #337b8b 80%); /* Deep blue with slight transparency */
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 20px;
+    margin-top: 10px;
+    
+    /* Smooth Slide/Fade Effect */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.4s ease-in-out;
+    pointer-events: none;
+  }
+
+  /* When menu is active */
+  .main-nav.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-nav li {
+    margin: 15px 0; /* Add spacing between vertical items */
+  }
+
+  .main-nav a {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+}
