@@ -69,9 +69,12 @@ footer .container {
 /* Icons */
 .footer-column i {
     color: #fff;
-    margin-right: 8px;
+    /* margin-right: 8px; */
 }
 
+.ico {
+    color: #941c97 !important;
+}
 /* Social links */
 .social-links {
     margin-top: 15px;
@@ -84,16 +87,19 @@ footer .container {
     width: 38px;
     height: 38px;
     margin-right: 10px;
-    background: #1e293b;
     border-radius: 50%;
-    color: #38bdf8;
+         background-color: #ffffff;
+
+    color: #941c97 !important;
     font-size: 16px;
     transition: 0.3s;
 }
 
 .social-links a:hover {
-    background: #38bdf8;
-    color: #0f172a;
+            background-image: linear-gradient(160deg, #941c97 0%, #337b8b 80%);
+
+    /* background: #38bdf8; */
+    color: #ffffff !important;
     transform: translateY(-4px);
 }
 
@@ -123,7 +129,7 @@ footer .container {
 
     .footer-content {
         grid-template-columns: 1fr;
-        text-align: center;
+        text-align: left;
     }
 
     .footer-column h3::after {

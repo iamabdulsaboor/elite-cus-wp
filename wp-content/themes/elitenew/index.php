@@ -2,22 +2,23 @@
 
 <!-- Hero Section -->
 
-    <section class="hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/backgrounde.png');
+<section class="hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/backgrounde.png');
     background-size: cover;">
-        <div class="container">
-            <h1>Smart Design & Digital Services For Every Business</h1>
-            <p>From websites to graphics and social media, Elite Marketing Technology builds what your brand needs. We help businesses in Canada and Pakistan grow online.</p>
-            <div class="hero-btn">
-            <a href="#" class="btn">Contact</a>
-            <a href="#" class="btn btn-outline">See Our Projects</a>
-            </div>
-        </div>
-    </section>
+  <div class="container">
+    <h1>Smart Design & Digital Services For Every Business</h1>
+    <p>From websites to graphics and social media, Elite Marketing Technology builds what your brand needs. We help
+      businesses in Canada and Pakistan grow online.</p>
+    <div class="hero-btn">
+      <a href="#" class="btn">Contact</a>
+      <a href="#" class="btn btn-outline">See Our Projects</a>
+    </div>
+  </div>
+</section>
 
 
-   <!-- branding logos -->
+<!-- branding logos -->
 
-  <section class="trusted-section">
+<section class="trusted-section">
   <h2>Trusted <span>By</span> Leading Businesses</h2>
 
   <!-- ROW 1 -->
@@ -43,7 +44,7 @@
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/branding/img-2.png">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/branding/img-3.png">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/branding/img-4.png">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/branding/gta.png">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/branding/gta.png">
     </div>
   </div>
 </section>
@@ -85,7 +86,9 @@
 
     <!-- RIGHT IMAGE -->
     <div class="about-image">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/thumbnail_9896ab70-4dee-4462-b7f2-8238aa5b8adc.png.2048x2048_q85-removebg-preview.png" alt="Rocket">
+      <img
+        src="<?php echo get_template_directory_uri(); ?>/assets/img/home/thumbnail_9896ab70-4dee-4462-b7f2-8238aa5b8adc.png.2048x2048_q85-removebg-preview.png"
+        alt="Rocket">
     </div>
 
   </div>
@@ -95,6 +98,13 @@
 <!-- drive growth section -->
 
 <section class="services-section">
+  <!-- Background Video -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="<?php echo get_template_directory_uri(); ?>/assets/img/vid/17070-278405092_large.mp4" type="video/mp4">
+  </video>
+
+  <!-- Overlay -->
+  <div class="video-overlay"></div>
   <div class="container">
 
     <span class="badge">● OUR SERVICES</span>
@@ -104,7 +114,9 @@
 
       <!-- CARD 1 -->
       <div class="service-card">
-        <div class="icon">🛠</div>
+        <div class="icon">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/art.png" alt="Graphic Designing Icon">
+        </div>
         <h3>Graphic Designing</h3>
         <p>
           We build strong and consistent brand identities that help businesses
@@ -115,7 +127,10 @@
 
       <!-- CARD 2 -->
       <div class="service-card">
-        <div class="icon">💻</div>
+        <div class="icon">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/mobile-development.png"
+            alt="Graphic Designing Icon">
+        </div>
         <h3>Website Development</h3>
         <p>
           We develop fast, secure, and conversion-focused websites designed to
@@ -126,7 +141,10 @@
 
       <!-- CARD 3 -->
       <div class="service-card">
-        <div class="icon">📱</div>
+        <div class="icon">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/social-media-management.png"
+            alt="Graphic Designing Icon">
+        </div>
         <h3>Social Media Management</h3>
         <p>
           We manage your social platforms with strategic planning and creative
@@ -137,7 +155,10 @@
 
       <!-- HIDDEN CARDS -->
       <div class="service-card hidden">
-        <div class="icon">📣</div>
+        <div class="icon">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/bullhorn.png"
+            alt="Graphic Designing Icon">
+        </div>
         <h3>Digital Marketing</h3>
         <p>
           Targeted campaigns that increase reach, boost engagement, and deliver
@@ -147,7 +168,9 @@
       </div>
 
       <div class="service-card hidden">
-        <div class="icon">🌐</div>
+        <div class="icon">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/art.png" alt="Graphic Designing Icon">
+        </div>
         <h3>Hosting</h3>
         <p>
           Reliable domain registration and secure hosting with strong uptime,
@@ -157,7 +180,10 @@
       </div>
 
       <div class="service-card hidden">
-        <div class="icon">💡</div>
+        <div class="icon">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/creative-tools.png"
+            alt="Graphic Designing Icon">
+        </div>
         <h3>Creative & Media Services</h3>
         <p>
           Professional media solutions that support branding, storytelling, and
@@ -177,7 +203,8 @@
 
 
 
-   <?php get_footer(); ?>
+<?php get_footer(); ?>
 
 </body>
+
 </html>

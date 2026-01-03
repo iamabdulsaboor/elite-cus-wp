@@ -73,11 +73,11 @@ header {
   gap: 20px;
 }
 
-.social-links a {
+/* .social-links a {
   color: white;
   margin-left: 15px;
   transition: color 0.3s;
-}
+} */
 
 .social-links a:hover {
   color: var(--accent-color);
