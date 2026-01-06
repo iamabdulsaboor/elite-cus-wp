@@ -9,6 +9,8 @@
       <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/contact.css">
      <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/header.css">
       <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/footer.css">
+      <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/about.css">
+      <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/whatsapp.css">
 </head>
 <body>
 

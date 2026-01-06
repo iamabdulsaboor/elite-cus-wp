@@ -49,6 +49,7 @@
   gap: 20px;
 }
 
+
 .btn {
   display: inline-block;
   padding: 7px 29px;
@@ -218,7 +219,7 @@
   font-size: 42px;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: #333;
+  color: #1b1b1b;
 }
 
 .about-content p {
@@ -228,7 +229,7 @@
 
 .about-content h4 {
   margin-bottom: 15px;
-  color: #333;
+  color: #1b1b1b;
 }
 
 .about-content ul {
@@ -329,6 +330,7 @@
 
 /* Headings */
 .services-section h2 {
+  
     text-align: center;
     font-size: 36px;
     margin-bottom: 50px;
@@ -567,6 +569,9 @@
 
 /* Mobile */
 @media (max-width: 576px) {
+  .con-btn {
+  margin-top: 14px;
+}
     .left-column {
         grid-template-columns: 1fr;
     }
@@ -717,6 +722,105 @@
     }
 }
 
+
+ .progress-section {
+  padding: 80px 0;
+  background-color: #000; /* Matching your body background */
+  color: white;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #941c97, #337b8b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progress-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+}
+
+/* The Connecting Line (Desktop) */
+.progress-grid::before {
+  content: '';
+  position: absolute;
+  top: 45px;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg, #941c97, #337b8b);
+  z-index: 1;
+}
+
+.progress-card {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.progress-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #337b8b;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(160deg, #941c97 0%, #337b8b 80%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 0 20px rgba(148, 28, 151, 0.4);
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .progress-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .progress-grid::before {
+    width: 2px;
+    height: 80%;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+  }
+
+  .progress-card {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 40px;
+  }
+}
 
 
 /* other */

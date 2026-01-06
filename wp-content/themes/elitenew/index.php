@@ -5,11 +5,10 @@
 <section class="hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/backgrounde.png');
     background-size: cover;">
   <div class="container">
-    <h1>Smart Design & Digital Services For Every Business</h1>
-    <p>From websites to graphics and social media, Elite Marketing Technology builds what your brand needs. We help
-      businesses in Canada and Pakistan grow online.</p>
+    <h1>Rank Higher. Reach More. Grow Smarter</h1>
+    <p>From responsive website design and software development, Powerful lead generation to social media marketing, we craft digital experiences that attract the right audience, engage real customers, and drive measurable revenue for businesses in Canada & Pakistan.</p>
     <div class="hero-btn">
-      <a href="#" class="btn">Contact</a>
+      <a href="#" class="btn con-btn">Contact</a>
       <a href="#" class="btn btn-outline">See Our Projects</a>
     </div>
   </div>
@@ -201,11 +200,40 @@
   </div>
 </section>
 
+<!-- our progress -->
+<section class="progress-section">
+  <div class="container">
+    <h2 class="section-title">Our Growth Journey</h2>
+    <div class="progress-grid">
+      <div class="progress-card">
+        <div class="step-number">01</div>
+        <div class="card-content">
+          <h3>Concept</h3>
+          <p>Defining the core vision and strategy for the project.</p>
+        </div>
+      </div>
+      <div class="progress-card">
+        <div class="step-number">02</div>
+        <div class="card-content">
+          <h3>Development</h3>
+          <p>Turning ideas into functional, high-performance code.</p>
+        </div>
+      </div>
+      <div class="progress-card">
+        <div class="step-number">03</div>
+        <div class="card-content">
+          <h3>Launch</h3>
+          <p>Deploying the final product to the global market.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- our projects -->
 <section class="portfolio-section">
   <div class="container">
-
+    <span class="badge">● OUR Technologies</span>
     <div class="portfolio-layout">
 
       <!-- LEFT COLUMN (3 CARDS) -->
@@ -262,9 +290,9 @@
       <!-- LEFT CONTENT -->
       <div class="collab-left">
 
-        <h2>Let’s Build Something Exceptional Together </h2>
+        <h2 class="section-title">Let’s Build Something Exceptional Together </h2>
 
-        <div class="team">
+        <!-- <div class="team">
           <div class="member">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/Gemini_Generated_Image_wukdhgwukdhgwukd.avif" alt="">
             <h4>Haseeb Ahmed <span>in</span></h4>
@@ -276,7 +304,7 @@
             <h4>Mahad Ajmal <span>in</span></h4>
             <p>Head of Business Development</p>
           </div>
-        </div>
+        </div> -->
 
       </div>
 

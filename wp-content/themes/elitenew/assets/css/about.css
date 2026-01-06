@@ -1,0 +1,478 @@
+/* --- ELITE MARKETING UNIQUE SCOPE --- */
+:root {
+  --em-primary: #ffff;
+  --em-dark: #1a1a1a;
+  --em-grey: #777;
+  --em-bg-light: #fcfcfc;
+}
+
+/* ceo section css */
+/* CEO Section Unique Styles */
+.em-ceo-section {
+    background-image: linear-gradient(160deg, #941c97 0%, #337b8b 80%);
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.em-ceo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.em-ceo-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; /* Text thora bada, image thori choti */
+    gap: 80px;
+    align-items: center;
+}
+
+.em-ceo-quote {
+    font-size: 22px;
+    font-style: italic;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 20px;
+    border-left: 4px solid #000;
+}
+
+.em-ceo-name {
+    font-size: 24px;
+    color: var(--em-dark);
+    margin-bottom: 5px;
+}
+
+.em-ceo-role {
+    color: var(--em-primary);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.em-ceo-social a {
+    color: #999;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.em-ceo-social a:hover {
+    color: var(--em-primary);
+}
+
+/* Image Styling with Accent */
+.em-ceo-image-box {
+    position: relative;
+}
+
+.em-ceo-img-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.em-ceo-img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    display: block;
+}
+
+.em-ceo-accent {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #fff1f0;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+/* Responsive CEO Section */
+@media (max-width: 992px) {
+    .em-ceo-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .em-ceo-quote {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .em-ceo-image-box {
+        order: -1; /* Mobile par image pehle dikhegi */
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .em-ceo-accent {
+        right: 0;
+        top: 10px;
+    }
+}
+
+/* other */
+.em-wrapper {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--em-dark);
+}
+.em-section {
+  padding: 80px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Why We Are Best Section */
+.em-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.em-subtitle {
+  color: var(--em-primary);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+}
+.em-title-large-1 {
+  color: #1b1b1b;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  
+}
+.em-title-large-2 {
+  color: #ffff;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  
+}
+.em-title-large {
+  /* color: #1b1b1b; */
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #941c97, #337b8b);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.em-feature-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.em-icon-box {
+  width: 55px;
+  height: 55px;
+ background: linear-gradient(90deg, #941c97, #337b8b);  color: var(--em-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.em-feature-text h4 {
+    color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.em-feature-text p {
+  color: var(--em-grey);
+  font-size: 15px;
+}
+
+/* Overlapping Image Logic */
+.em-img-container {
+  position: relative;
+  height: 450px;
+}
+.em-img-back {
+  width: 85%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.em-img-front {
+  width: 65%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid white;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats Section */
+.em-stats-strip {
+        background-image: linear-gradient(160deg, #941c97 0%, #337b8b 80%);
+  padding: 60px 0;
+  border-top: 1px solid #eee;
+}
+.em-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 28px;
+}
+.em-stat-card i {
+  font-size: 30px;
+  color: var(--em-primary);
+  margin-bottom: 15px;
+  display: block;
+}
+.em-stat-num {
+  font-size: 45px;
+  font-weight: 800;
+  color: var(--em-dark);
+  margin: 0;
+}
+.em-stat-label {
+  color:white;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.text-center{
+    text-align: center;
+}
+
+/* Glassmorphism Contact Section */
+.em-contact-banner {
+  padding: 100px 5%;
+  text-align: center;
+}
+.em-glass-box {
+  background: rgba(40, 40, 40, 0.45);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 50px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* max-width: 700px; */
+  margin: 0 auto;
+}
+.em-btn-red {
+  background: var(--em-primary);
+  color: #000;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+.em-btn-red:hover {
+        background-image: linear-gradient(160deg, #941c97 0%, #337b8b 80%);
+color:#fff;
+  transform: translateY(-3px);
+}
+
+/* Team Section */
+.em-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+.em-team-card {
+  text-align: center;
+}
+.em-team-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: 0.4s;
+}
+.em-team-card:hover .em-team-img {
+  filter: grayscale(0%);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .em-grid-2,
+  .em-stats-grid,
+  .em-team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .em-img-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .em-img-back,
+  .em-img-front {
+    position: static;
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .em-stats-grid,
+  .em-team-grid {
+    grid-template-columns: 1fr;
+  }
+  .em-title-large-1 {
+    font-size: 30px;
+  }
+  .em-title-large {
+    font-size: 30px;
+  }
+}
+
+
+/* what we do section css */
+
+        /* :root {
+            --accent: #00d4ff;
+            --accent-2: #7000ff;
+            --bg: #050505;
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        } */
+
+        .what-we-do {
+            padding: 100px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        /* Left Side: Branding/Title */
+        .info-panel {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 50px;
+        }
+
+        .tagline {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .info-panel h2 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.1;
+            margin: 20px 0;
+        }
+
+        /* Right Side: The Unique Flow */
+        .services-flow {
+            flex: 1.5;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            position: relative;
+        }
+
+        .service-node {
+            /* background-image: linear-gradient(160deg, #941c97 0%, #337b8b 80%); */
+            background: linear-gradient(145deg, #fff, #1a1a1a);
+            padding: 40px;
+            border-radius: 0 40px 0 40px; /* Unique asymmetrical shape */
+            border-left: 3px solid var(--accent);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Stagger effect for uniqueness */
+        .service-node:nth-child(even) {
+            margin-top: 40px;
+            border-left: 3px solid var(--accent-2);
+        }
+
+        .service-node:hover {
+            transform: scale(1.05);
+            /* background: #1d1d1d; */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .service-node::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+                        /* background: linear-gradient(145deg, #fff, #1a1a1a); */
+
+            background: radial-gradient(145deg, rgba(0,212,255,0.7) 0%, white);
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        .service-node:hover::before {
+            opacity: 1;
+        }
+
+        .node-number {
+            color:#fff;
+            font-size: 3rem;
+            font-weight: 900;
+            opacity: 0.1;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+
+        .service-node h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .service-node p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            z-index: 1;
+            position: relative;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 992px) {
+            .what-we-do { flex-direction: column; text-align: center; }
+            .info-panel { padding-right: 0; margin-bottom: 60px; }
+            .services-flow { width: 100%; }
+        }
+
+        @media (max-width: 600px) {
+            .services-flow { grid-template-columns: 1fr; }
+            .service-node:nth-child(even) { margin-top: 0; }
+        }
+  
