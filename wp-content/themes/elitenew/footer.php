@@ -68,6 +68,8 @@
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/contact.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/about.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/graphics.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/marketing.js"></script>
 
 </body>
 

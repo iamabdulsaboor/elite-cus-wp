@@ -1,0 +1,152 @@
+:root {
+  --lime: #ccff00;
+  --charcoal: #121212;
+  --pure-white: #ffffff;
+  --gray: #222222;
+}
+
+
+/* MARQUEE */
+.scrolling-marquee {
+  background-image: linear-gradient(160deg, #941c97 0%, #337b8b 80%);
+  /* background: var(--lime); */
+  color: black;
+  padding: 15px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.marquee-content {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+  font-size: 1.5rem;
+}
+
+/* ZIGZAG PROCESS */
+.process-zigzag {
+  padding: 100px 5%;
+}
+.zigzag-row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.zigzag-text {
+  flex: 1;
+}
+.step-num {
+  font-size: 5rem;
+  font-weight: 900;
+  opacity: 0.1;
+  line-height: 1;
+}
+.zigzag-box {
+  flex: 1;
+  height: 350px;
+  border-radius: 40px;
+}
+.bg-lime {
+  background: var(--lime);
+  transform: rotate(-3deg);
+}
+.bg-dark {
+  background: var(--gray);
+  transform: rotate(3deg);
+  border: 2px solid var(--lime);
+}
+
+/* SERVICE SLOTS */
+.service-slots {
+  display: flex;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.slot {
+  flex: 1;
+  padding: 60px 40px;
+  transition: 0.3s;
+}
+.slot:hover {
+  background: var(--lime);
+  color: black;
+}
+.border-l {
+  border-left: 1px solid #333;
+}
+
+/* CTA WITH BLACK OVERLAY */
+.emt-cta-v3 {
+  position: relative;
+  padding: 150px 0;
+  text-align: center;
+  background: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.black-wash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1;
+}
+.cta-inner {
+  position: relative;
+  z-index: 2;
+}
+.huge-title {
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+.btn-lime {
+  background: var(--lime);
+  color: black;
+  padding: 20px 50px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ANIMATION */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .hero-v3 {
+    flex-direction: column;
+    height: auto;
+  }
+  .hero-v3-left {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .zigzag-row,
+  .zigzag-row.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+  .service-slots {
+    flex-direction: column;
+  }
+  .border-l {
+    border-left: none;
+    border-top: 1px solid #333;
+  }
+}
