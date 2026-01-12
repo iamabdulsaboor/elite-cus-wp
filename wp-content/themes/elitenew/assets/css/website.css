@@ -7,7 +7,7 @@
 
 /* 2. BENTO GRID SERVICES */
 .services-bento {
-  padding: 80px 5%;
+  padding: 140px 5%;
 }
 .bento-grid {
   display: grid;
@@ -34,8 +34,147 @@
   background: var(--s-purple);
 }
 
+/* Container Setup */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust based on your layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+.bento-item {
+    position: relative;
+    overflow: hidden; /* Important: keeps the text/image inside the rounded corners */
+    height: 300px; /* Example height */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    transition: all 0.4s ease;
+}
+
+/* --- 1. Main Service: Smooth Background Scroll --- */
+.main-service {
+    background-position: top center;
+    transition: background-position 3s ease-in-out; /* Slow transition for "scrolling" feel */
+}
+
+.main-service:hover {
+    background-position: bottom center; /* Moves the image from top to bottom */
+}
+
+/* --- 2. Service Cards: Text Reveal --- */
+/* Container Setup: Grid responsive banane ke liye */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Mobile par 1 column, screen bari hone par khud adjust hoga */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Main Service (Pehla Box) ko bari screen par 2 columns ki jagah dena */
+@media (min-width: 992px) {
+    .main-service {
+        grid-column: span 2;
+        grid-row: span 2;
+        height: auto !important; /* Grid automatically sets height */
+    }
+}
+
+/* Base Style for all items */
+.bento-item {
+    position: relative;
+    overflow: hidden;
+    height: 264px; 
+    border-radius: 24px; /* More modern rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 140%; /* Image thodi bari rakhi hai taake scroll smooth ho */
+    background-position: top center;
+    transition: background-position 5s cubic-bezier(0.25, 1, 0.5, 1), transform 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Hover par background scroll aur halka sa box lift */
+.bento-item:hover {
+    background-position: bottom center;
+    transform: translateY(-5px);
+}
+
+/* Typography Styling */
+.bento-item h2, .bento-item h3 {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif; /* Ya koi bhi modern font */
+    line-height: 1.2;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+.bento-item p {
+    color: rgba(255,255,255,0.8);
+    position: relative;
+    z-index: 3;
+}
+
+.web-mt {
+    margin-top: 58px;
+}
+
+/* --- Text Reveal (Sirf Service Cards ke liye) --- */
+.service-card h3 {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.service-card:hover h3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Glassmorphism Gradient Overlay */
+.bento-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.8) 100%);
+    opacity: 0.6; /* Pehle se thoda dark taake text nazar aaye */
+    transition: opacity 0.4s ease;
+    z-index: 1;
+}
+
+.bento-item:hover::before {
+    opacity: 0.9; /* Hover par aur dark ho jayega */
+}
+
+/* Responsive adjustments for Tablets and Phones */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr; /* Har item full width mobile par */
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .bento-item {
+        height: 300px;
+        background-size: 120%; /* Mobile par zoom thoda kam */
+    }
+
+    .web-mt {
+    margin-top: 58px;
+}
+}
+
 /* 3. PORTFOLIO GRID */
-.portfolio-grid {
+/* .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 15px;
@@ -44,14 +183,14 @@
   width: 100%;
   border-radius: 20px;
   transition: 0.4s;
-}
+} */
 
 /* 4. STATS SECTION */
 .stats-section {
   display: flex;
   justify-content: space-around;
   padding: 100px 5%;
-  background: #0a0a0a;
+  background-image: linear-gradient(160deg, #941c97 0%, #337b8b 80%);
 }
 .stat-box {
   text-align: center;
@@ -60,7 +199,7 @@
   font-size: 4rem;
   font-weight: 900;
   display: block;
-  color: var(--p-purple);
+  color: #ffffff;
 }
 
 /* 5. CTA SECTION (Dark Overlay) */
@@ -78,7 +217,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 .content-above {

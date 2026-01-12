@@ -39,49 +39,92 @@
   background: var(--accent);
 }
 
-/* PORTFOLIO */
-.portfolio-section {
-  background: white;
-  color: var(--dark);
-  padding: 100px 0;
-  border-radius: 50px 50px 0 0;
-}
-.portfolio-nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 50px;
-}
-.tab-btn {
-  padding: 12px 30px;
-  border-radius: 50px;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  transition: 0.3s;
-  font-weight: bold;
-}
-.tab-btn.active {
-  background: var(--primary);
-  color: white;
-  border-color: var(--primary);
-}
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 20px;
-}
-.p-item img {
-  width: 100%;
-  border-radius: 20px;
-  transition: transform 0.5s ease;
-  cursor: pointer;
-}
-.p-item:hover img {
-  transform: scale(1.02);
+/* Container Layout */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
+/* Bento Boxes Base Styling */
+.bento-box {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    background-position: top center;
+    background-size: 130%; /* Scroll ke liye thoda bara size */
+    transition: background-position 4s cubic-bezier(0.25, 1, 0.5, 1), transform 0.3s ease;
+}
+
+/* Hover: Background Scroll */
+.bento-box:hover {
+    background-position: bottom center;
+}
+
+/* --- TEXT REVEAL LOGIC --- */
+
+/* Hide H3 and P initially */
+.bento-box h3, 
+.bento-box p {
+    color: white;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(30px); /* Neeche se start hoga */
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    z-index: 2;
+}
+
+/* P (Description) ko thoda late dikhane ke liye delay */
+.bento-box p {
+    transition-delay: 0.1s;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Hover karne par Text reveal */
+.bento-box:hover h3, 
+.bento-box:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Dark Overlay taake text parha jaye */
+.bento-box::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 10%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
+}
+
+.bento-box:hover::after {
+    opacity: 1;
+}
+.mar-h {
+  height: 360px;
+}
+.mar-h-1 {
+    margin-top: 165px;
+  height: 350px;
+}
+
+/* Specific Sizes for Layout (Bento Style) */
+@media (min-width: 992px) {
+    .large-box { grid-row: span 2; height: 100%; }
+    .wide-box { grid-column: span 2; }
+}
 /* PROCESS */
 .process-section {
+  background-image: linear-gradient(160deg, #941c97 0%, #337b8b 80%);
   padding: 100px 0;
   text-align: center;
 }
@@ -92,14 +135,103 @@
   padding-top: 50px;
 }
 .step span {
+  color: white;
   font-size: 4rem;
   font-weight: 900;
   opacity: 0.1;
   display: block;
 }
 .step h4 {
-  margin-top: -30px;
+  /* margin-top: -30px; */
   font-size: 1.5rem;
+}
+
+.process-section {
+    padding: 80px 0;
+    background: #000; /* Modern dark look */
+}
+
+.process-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Mobile responsiveness ke liye */
+}
+
+.step {
+    position: relative;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    padding: 40px 20px;
+    background: #111;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    border: 1px solid #222;
+}
+
+/* Hover effect for the box */
+.step:hover {
+    background: #1a1a1a;
+    transform: translateY(-10px);
+    border-color: #555;
+}
+
+/* Numbers Styling */
+.step span {
+    font-size: 33px;
+    font-weight: bold;
+    color: #888;
+    background: rgba(255,255,255,0.05);
+    /* padding: 8px 15px; */
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Heading Styling */
+.step h4 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* --- THE ARROWS --- */
+/* Sirf Desktop par arrows dikhane ke liye (Aakhri step ke baad nahi) */
+@media (min-width: 992px) {
+    .step:not(:last-child)::after {
+        content: '→'; /* Aap icon bhi use kar sakte hain */
+        position: absolute;
+        right: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 48px;
+        color: #444;
+        font-weight: 300;
+        z-index: 2;
+    }
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 991px) {
+    .process-row {
+        flex-direction: column; /* Vertical layout on mobile */
+    }
+    
+    .step {
+        width: 100%;
+    }
+
+    /* Mobile par arrow ko neeche dikhane ke liye */
+    .step:not(:last-child)::after {
+        content: '↓'; 
+        display: block;
+        margin-top: 20px;
+        font-size: 25px;
+        color: #444;
+    }
 }
 
 /* CTA WITH OVERLAY */
@@ -118,7 +250,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 .cta-content {
@@ -169,4 +301,11 @@
   h1 {
     font-size: 3rem;
   }
+   .mar-h {
+  height: 180px;
+}
+  .mar-h-1 {
+    margin-top: 0px;
+  height: 180px;
+}
 }

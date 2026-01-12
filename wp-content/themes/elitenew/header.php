@@ -18,7 +18,7 @@
       <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/website.css">
       <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/marketing.css">
       <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/other-services.css">
-
+      <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/leads.css">
 </head>
 <body>
 

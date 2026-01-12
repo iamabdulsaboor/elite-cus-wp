@@ -33,7 +33,7 @@
                 <p class="em-ceo-quote">"At Elite Marketing, we don't just follow trends; we create them. Our goal is to empower businesses with digital strategies that drive real-world impact."</p>
                 
                 <div class="em-ceo-details">
-                    <h4 class="em-ceo-name">Haseeb Ahmed</h4>
+                    <h4 class="em-ceo-name">Adnan Liaqat</h4>
                     <p class="em-ceo-role">Founder & CEO, Elite Marketing</p>
                     <div class="em-ceo-social">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -46,7 +46,7 @@
 
             <div class="em-ceo-image-box">
                 <div class="em-ceo-img-wrapper">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/Gemini_Generated_Image_wukdhgwukdhgwukd.avif" alt="CEO Image" class="em-ceo-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/unnamed.jpg" alt="CEO Image" class="em-ceo-img">
                     <div class="em-ceo-accent"></div>
                 </div>
             </div>

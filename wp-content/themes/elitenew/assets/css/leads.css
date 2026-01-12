@@ -1,0 +1,23 @@
+
+.gold-gradient {
+  background-image: linear-gradient(160deg, #941c97 0%, #337b8b 80%);
+}
+.gold-text {
+background: linear-gradient(90deg, #941c97, #337b8b);
+    background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.section-padding {
+  padding: 100px 20px;
+}
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 15px;
+  }
+}

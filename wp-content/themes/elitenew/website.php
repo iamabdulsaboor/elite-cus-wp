@@ -21,24 +21,32 @@
     <section class="services-bento">
         <div class="container">
             <div class="bento-grid">
-                <div class="bento-item main-service">
+                <div class="bento-item main-service" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/website/PSD Template Nirix Metaverse.jpeg');
+    background-size: cover;">
                     <h2>Our Core <br>Expertise</h2>
                     <p>Tailored solutions for modern brands.</p>
                 </div>
-                <div class="bento-item service-card purple">
+                <div class="bento-item service-card purple" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/website/graphic.jpeg');
+    background-size: cover;">
                     <h3>Graphic Design</h3>
                 </div>
-                <div class="bento-item service-card dark">
-                    <h3>Social Strategy</h3>
+                <div class="bento-item service-card dark" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/website/ads.jpeg');
+    background-size: cover;">
+                    <h3>Ads Campaigns</h3>
                 </div>
-                <div class="bento-item service-card light">
+                <div class="bento-item service-card light web-mt" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/website/digital.jpeg');
+    background-size: cover;">
+                    <h3>Digital Marketing</h3>
+                </div>
+                <div class="bento-item service-card dark web-mt" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/website/seo.jpeg');
+    background-size: cover;">
                     <h3>SEO Mastery</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="portfolio-section">
+    <!-- <section id="portfolio" class="portfolio-section">
         <div class="container">
             <h2 class="title-center">Our <span>Portfolio</span></h2>
             <div class="filter-tabs">
@@ -52,11 +60,11 @@
                 <div class="portfolio-item logos"><img src="https://via.placeholder.com/400x400/6e48ff" alt="Logo"></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="stats-section">
         <div class="stat-box">
-            <span class="num">150+</span>
+            <span class="num">50+</span>
             <span class="label">Clients Served</span>
         </div>
         <div class="stat-box">
@@ -64,7 +72,7 @@
             <span class="label">Retention Rate</span>
         </div>
         <div class="stat-box">
-            <span class="num">12k+</span>
+            <span class="num">2k+</span>
             <span class="label">Designs Created</span>
         </div>
     </section>
@@ -74,7 +82,7 @@
         <div class="container content-above">
             <h2 class="em-title-large">Let’s Create Something Amazing</h2>
             <p>Start your graphic design project with Elite Marketing Technology</p>
-            <a href="#" class="btn-cta-light">Start Project</a>
+            <a href="#" class="btn con-btn">Start Project</a>
         </div>
     </section>
 

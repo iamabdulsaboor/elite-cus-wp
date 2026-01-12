@@ -59,7 +59,7 @@
 <div class="cursor-dot"></div>
 
 <!-- whatsapp button -->
-<a href="https://wa.me/923205019342" class="em-wa-mobile-btn" target="_blank">
+<a href="https://wa.me/16478602420" class="em-wa-mobile-btn" target="_blank">
     <i class="fab fa-whatsapp"></i>
     <span class="em-wa-text">Chat with us</span>
 </a>
